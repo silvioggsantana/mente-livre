@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_claro"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="347dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Mente" />
+
+    <LinearLayout
+        android:id="@+id/meuFrameLayout"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_shape_rounded"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/cadastrotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_thin"
+            android:text="Cadastro"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textFontWeight="900"
+            android:layout_marginLeft="120dp"/>
+
+        <TextView
+            android:id="@+id/nometxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_thin"
+            android:text="Nome"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textFontWeight="900"/>
+
+        <EditText
+            android:id="@+id/emailinput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Digite seu nome"
+            android:background="@drawable/bg_inputtext_rounded"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/nascimentotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_thin"
+            android:text="Data de nascimento"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textFontWeight="900"/>
+
+        <EditText
+            android:id="@+id/nascimentoinput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Digite nesse formato dd/mm/aaaa"
+            android:background="@drawable/bg_inputtext_rounded"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_thin"
+            android:text="login"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textFontWeight="900"
+            android:layout_marginLeft="160dp"/>
+
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cadastrar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="16dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/apoiotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/poppins_thin"
+        android:text="O Apoio que o"
+        android:textColor="@color/azul_escuro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textFontWeight="900"/>
+
+    <TextView
+        android:id="@+id/JovemPrecisatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/poppins_thin"
+        android:text="Jovem Precisa"
+        android:textColor="@color/azul_escuro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textFontWeight="900"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

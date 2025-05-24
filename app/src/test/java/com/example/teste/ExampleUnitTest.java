@@ -1,4 +1,4 @@
-package com.example.mentelivre;
+package com.example.teste;
 
 import org.junit.Test;
 

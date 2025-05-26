@@ -7,21 +7,14 @@
         android:id="@+id/configtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_thin"
+        android:fontFamily="@font/poppins_medium"
         android:text="Diário"
-        android:textFontWeight="900"
         android:textAlignment="center"
         android:textSize="30dp"
         android:paddingVertical="20dp"
         android:textColor="@color/azul_diario_component"
         />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/menu_azul"
-        android:text="."/>
 
 
 </ScrollView>

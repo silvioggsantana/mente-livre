@@ -44,8 +44,7 @@
         android:layout_width="wrap_content"
         android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
         android:padding="25dp"
-        android:fontFamily="@font/poppins_thin"
-        android:textFontWeight="700"
+        android:fontFamily="@font/poppins_medium"
         android:letterSpacing="-0.05"
         android:textColor="@color/black"/>
 

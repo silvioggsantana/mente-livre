@@ -12,9 +12,8 @@
         android:id="@+id/configtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_thin"
+        android:fontFamily="@font/poppins_medium"
         android:text="Configurações"
-        android:textFontWeight="900"
         android:textAlignment="center"
         android:textSize="30dp"
         android:paddingVertical="20dp"
@@ -38,12 +37,12 @@
             android:id="@+id/nometxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Nome"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:layout_marginTop="8dp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/emailinput"
@@ -58,12 +57,12 @@
             android:id="@+id/nascimentotxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Data de nascimento"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:layout_marginTop="8dp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/nascimentoinput"
@@ -79,11 +78,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Senha"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/senhainput"
@@ -99,11 +98,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Confirme sua Senha"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/confirmarsenhainput"

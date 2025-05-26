@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/diariocomponent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/cinza_diario_component"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:backgroundTint="@color/cinza_diario_component">
+
+        <TextView
+            android:id="@+id/dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dia 1"
+            android:textColor="@color/azul_diario_component"
+            android:textSize="24sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/diadata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30/20/09"
+            android:textColor="@color/azul_diario_component"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diariotext"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
+        android:padding="25dp"
+        android:fontFamily="@font/poppins_thin"
+        android:textFontWeight="700"
+        android:letterSpacing="-0.05"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

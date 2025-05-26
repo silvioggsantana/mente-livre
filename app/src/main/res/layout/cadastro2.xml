@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Mente" />
+        app:srcCompat="@drawable/mente" />
 
     <LinearLayout
         android:id="@+id/meuFrameLayout"
@@ -105,7 +105,6 @@
             android:textColor="@color/white"
             android:backgroundTint="@color/azul_escuro"
             android:layout_marginTop="16dp"
-
             />
     </LinearLayout>
 

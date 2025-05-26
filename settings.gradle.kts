@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MenteLivre"
+rootProject.name = "teste"
 include(":app")
  

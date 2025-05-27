@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/azul_claro"
-    tools:context=".MainActivity">
+    >
 
     <ImageView
         android:id="@+id/imageView2"
@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Mente" />
+        app:srcCompat="@drawable/mente" />
 
     <LinearLayout
         android:id="@+id/meuFrameLayout"
@@ -37,23 +37,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Cadastro"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textFontWeight="900"
             android:layout_marginLeft="120dp"/>
 
         <TextView
             android:id="@+id/emailtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Email"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:layout_marginTop="8dp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/emailinput"
@@ -69,11 +68,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Senha"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/senhainput"
@@ -89,11 +88,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="Confirme sua Senha"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textFontWeight="900"/>
+            />
 
         <EditText
             android:id="@+id/confirmarsenhainput"
@@ -109,11 +108,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_thin"
+            android:fontFamily="@font/poppins_medium"
             android:text="login"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textFontWeight="900"
             android:layout_marginLeft="160dp"/>
 
         <Button
@@ -133,28 +131,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
-        android:fontFamily="@font/poppins_thin"
+        android:fontFamily="@font/poppins_medium"
         android:text="O Apoio que o"
         android:textColor="@color/azul_escuro"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textFontWeight="900"/>
+        />
 
     <TextView
         android:id="@+id/JovemPrecisatxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
-        android:fontFamily="@font/poppins_thin"
+        android:fontFamily="@font/poppins_medium"
         android:text="Jovem Precisa"
         android:textColor="@color/azul_escuro"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textFontWeight="900"/>
+        />
 
 
 

@@ -96,7 +96,7 @@
             android:layout_marginLeft="160dp"/>
 
         <Button
-            android:id="@+id/continuar"
+            android:id="@+id/cadastrar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Cadastrar"

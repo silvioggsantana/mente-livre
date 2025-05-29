@@ -69,7 +69,7 @@
 
     <!-- Menu Button -->
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/configbtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/menu_azul"
@@ -85,9 +85,9 @@
         android:layout_width="27dp"
         android:layout_height="27dp"
         app:srcCompat="@drawable/menu"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/configbtn"
+        app:layout_constraintStart_toStartOf="@+id/configbtn"
+        app:layout_constraintEnd_toEndOf="@+id/configbtn"
         android:layout_marginBottom="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,13 +33,25 @@
             android:name=".HomeActivity"
             android:exported="false"/>
         <activity
-        android:name=".MenuActivity"
-        android:exported="false"/>
+            android:name=".MenuActivity"
+            android:exported="false"/>
         <activity
             android:name=".RespiracaoActivity"
             android:exported="false"/>
         <activity
             android:name=".Info_respiracaoActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Info_diarioActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ConfiguracaoActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DiarioActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Diario_componentActivity"
             android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"

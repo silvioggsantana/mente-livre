@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-    Button repiracaovermais;
+    Button repiracaovermais,diariobtn,homebtn ,configbtn,verdiariobtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,16 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         menu.setVisibility(View.VISIBLE);
 
         repiracaovermais = (Button) findViewById(R.id.respiracabtn);
+        verdiariobtn = (Button) findViewById(R.id.verdiariobtn);
+        diariobtn = (Button) findViewById(R.id.diariobtn);
+        homebtn = (Button) findViewById(R.id.homebtn);
+        configbtn = (Button) findViewById(R.id.configbtn);
 
+        verdiariobtn.setOnClickListener(this);
+        homebtn.setOnClickListener(this);
+        configbtn.setOnClickListener(this);
         repiracaovermais.setOnClickListener(this);
+        diariobtn.setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +37,26 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId()==R.id.respiracabtn){
             Intent info = new Intent(this,Info_respiracaoActivity.class);
             startActivity(info);
+        }
+
+        if (v.getId()==R.id.verdiariobtn){
+            Intent infodiario = new Intent(this,Info_diarioActivity.class);
+            startActivity(infodiario);
+        }
+
+        if (v.getId()==R.id.diariobtn){
+            Intent diario = new Intent(this,DiarioActivity.class);
+            startActivity(diario);
+        }
+
+        if (v.getId()==R.id.homebtn){
+            Intent home = new Intent(this,HomeActivity.class);
+            startActivity(home);
+        }
+
+        if (v.getId()==R.id.configbtn){
+            Intent configuracao = new Intent(this,ConfiguracaoActivity.class);
+            startActivity(configuracao);
         }
     }
 }

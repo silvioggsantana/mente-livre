@@ -35,6 +35,12 @@
         <activity
         android:name=".MenuActivity"
         android:exported="false"/>
+        <activity
+            android:name=".RespiracaoActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Info_respiracaoActivity"
+            android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

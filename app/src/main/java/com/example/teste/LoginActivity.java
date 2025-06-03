@@ -2,6 +2,7 @@ package com.example.teste;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -49,16 +50,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 return;
             }
 
-            boolean loginValido = dbHelper.validarLogin(email, senha);
+            int idUsuario = dbHelper.validarLogin(email, senha);
 
-            if (loginValido) {
+            if (idUsuario != -1) {
+                // Salva o id do usuário logado
+                SharedPreferences prefs = getSharedPreferences("usuario", MODE_PRIVATE);
+                prefs.edit().putInt("id_usuario", idUsuario).apply();
+
                 Toast.makeText(this, "Login com sucesso", Toast.LENGTH_SHORT).show();
                 Intent home = new Intent(this, HomeActivity.class);
                 startActivity(home);
-                finish(); // opcional: fecha a tela de login
+                finish();
             } else {
                 Toast.makeText(this, "Email ou senha incorretos", Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 }

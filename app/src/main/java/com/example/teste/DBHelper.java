@@ -1,5 +1,6 @@
 package com.example.teste;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -49,11 +50,19 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     // Verificar login
-    public boolean validarLogin(String email, String senha) {
+    public int validarLogin(String email, String senha) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = db.rawQuery("SELECT * FROM usuario WHERE email = ? AND senha = ?", new String[]{email, senha});
-        return c.moveToFirst();
+        Cursor c = db.rawQuery("SELECT id FROM usuario WHERE email = ? AND senha = ?", new String[]{email, senha});
+        if (c.moveToFirst()) {
+            @SuppressLint("Range") int id = c.getInt(c.getColumnIndex("id"));
+            c.close();
+            return id;
+        } else {
+            c.close();
+            return -1; // login inválido
+        }
     }
+
 
     // Inserir anotação
     public boolean inserirAnotacao(String titulo, String conteudo, String data, int idUsuario) {
@@ -72,4 +81,21 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM anotacao WHERE id_usuario = ?", new String[]{String.valueOf(idUsuario)});
     }
+
+    // Recupera usuário pelo ID
+    public Cursor getUsuarioPorId(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM usuario WHERE id = ?", new String[]{String.valueOf(id)});
+    }
+
+    // Atualiza nome e senha do usuário
+    public boolean atualizarUsuario(int id, String nome, String senha) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("nome", nome);
+        cv.put("senha", senha);
+        int result = db.update("usuario", cv, "id = ?", new String[]{String.valueOf(id)});
+        return result > 0;
+    }
+
 }

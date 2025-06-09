@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-    Button repiracaovermais,diariobtn,homebtn ,configbtn,verdiariobtn;
+    Button repiracaovermais,diariobtn,homebtn ,configbtn,verdiariobtn,saibamais;
     TextView nomeUsuarioText;
     DBHelper dbHelper;
 
@@ -25,6 +25,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         ConstraintLayout menu = findViewById(R.id.menuSuspenso);
         menu.setVisibility(View.VISIBLE);
 
+        saibamais = (Button) findViewById(R.id.saibamaishomebtn);
         repiracaovermais = (Button) findViewById(R.id.respiracabtn);
         verdiariobtn = (Button) findViewById(R.id.verdiariobtn);
         diariobtn = (Button) findViewById(R.id.diariobtn);
@@ -36,6 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         configbtn.setOnClickListener(this);
         repiracaovermais.setOnClickListener(this);
         diariobtn.setOnClickListener(this);
+        saibamais.setOnClickListener(this);
 
         nomeUsuarioText = findViewById(R.id.titulohometxt);
         dbHelper = new DBHelper(this);
@@ -60,6 +62,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId()==R.id.respiracabtn){
             Intent info = new Intent(this,Info_respiracaoActivity.class);
             startActivity(info);
+        }
+
+        if (v.getId()==R.id.saibamaishomebtn){
+            Intent info_home = new Intent(this,Info_homeActivity.class);
+            startActivity(info_home);
         }
 
         if (v.getId()==R.id.verdiariobtn){

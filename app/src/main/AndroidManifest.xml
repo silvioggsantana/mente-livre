@@ -53,6 +53,9 @@
         <activity
             android:name=".Diario_componentActivity"
             android:exported="false"/>
+        <activity
+            android:name=".Info_homeActivity"
+            android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cinza_fundo_home"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:background="@color/cinza_fundo_home">
 
-    <TextView
-        android:id="@+id/titulohometxt"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Técnicas de Respiração"
-        android:textSize="25dp"
-        android:padding="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/inforespiracaotxt"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
-        android:padding="25dp"
-        android:fontFamily="@font/poppins_medium"
-        android:letterSpacing="-0.05"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/titulohometxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Técnicas de Respiração"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/inforespiracaotxt2"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
-        android:padding="25dp"
-        android:fontFamily="@font/poppins_medium"
-        android:letterSpacing="-0.05"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/inforespiracaotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:textColor="@color/black"
+            android:letterSpacing="-0.05"
+            android:fontFamily="@font/poppins_medium"
+            android:text="A respiração é uma das ferramentas mais simples e eficazes para acalmar a mente e o corpo. Técnicas de respiração controlada ajudam a reduzir a frequência cardíaca, desacelerar os pensamentos e promover uma sensação de relaxamento. Para adolescentes que enfrentam pressões do dia a dia, aprender a respirar conscientemente pode ajudar a retomar o controle emocional." />
 
-    <Button
-        android:id="@+id/continuar"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="Continuar"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/azul_escuro"
-        android:layout_marginTop="16dp"
-        />
+        <TextView
+            android:id="@+id/inforespiracaotxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:textColor="@color/black"
+            android:letterSpacing="-0.05"
+            android:fontFamily="@font/poppins_medium"
+            android:text="No Mente Livre, você encontra exercícios guiados com respiração profunda, usando ciclos simples como 'inspirar por 4 segundos, segurar por 4, expirar por 4'. Esse hábito pode aliviar a ansiedade no momento e, com o uso contínuo, ajudar você a lidar melhor com suas emoções. Experimente e veja como pequenas pausas podem fazer grande diferença." />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

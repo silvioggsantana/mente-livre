@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cinza_fundo_home"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:background="@color/cinza_fundo_home">
 
-    <TextView
-        android:id="@+id/titulohometxt"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Diário"
-        android:textSize="25dp"
-        android:padding="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/inforespiracaotxt"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
-        android:padding="25dp"
-        android:fontFamily="@font/poppins_medium"
-        android:letterSpacing="-0.05"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/titulohometxt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Diário"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/inforespiracaotxt2"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
-        android:padding="25dp"
-        android:fontFamily="@font/poppins_medium"
-        android:letterSpacing="-0.05"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/inforespiracaotxt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Escrever sobre o que sentimos é uma forma poderosa de entender melhor nossas emoções. O diário do Mente Livre foi criado para ser um espaço só seu, onde você pode registrar seus pensamentos, desabafar, contar como foi seu dia ou simplesmente escrever o que estiver sentindo naquele momento."
+            android:padding="25dp"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="-0.05"
+            android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/continuar"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="Continuar"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/azul_escuro"
-        android:layout_marginTop="16dp"
-        />
+        <TextView
+            android:id="@+id/inforespiracaotxt2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ao usar o diário com frequência, você poderá perceber padrões nas suas emoções e acompanhar sua própria evolução. É um hábito simples que ajuda a aliviar a mente, reduzir a ansiedade e aumentar o autoconhecimento. Tudo que você escrever ficará guardado de forma segura e confidencial, só para você."
+            android:padding="25dp"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="-0.05"
+            android:textColor="@color/black" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

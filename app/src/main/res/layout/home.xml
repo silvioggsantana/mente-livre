@@ -37,11 +37,15 @@
 
             >
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
             <TextView
                 android:id="@+id/hometxt"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Lorem ipsum dolor sit amet consectetur. Integer pellentesque est in viverra. Pharetra ac cras donec mi. Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
+                android:text="O Mente Livre é uma plataforma digital desenvolvida para oferecer apoio emocional a adolescentes de 12 a 18 anos, de forma acessível, discreta e segura."
                 android:padding="25dp"
                 android:fontFamily="@font/poppins_medium"
                 android:letterSpacing="-0.05"
@@ -77,7 +81,7 @@
             android:id="@+id/textotitulohometxt"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text=" Tellus quam bla bla bla aliquam est mauris molestie consequat nec et."
+            android:text="Aqui você consegue ver as nossas principais funcionalidades"
             android:padding="10dp"
             android:fontFamily="@font/poppins_medium"
             android:letterSpacing="-0.05"
@@ -111,7 +115,7 @@
                 android:id="@+id/respiracatxt"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
+                android:text="A respiração é uma das ferramentas mais simples e eficazes para acalmar a mente e o corpo. Técnicas de respiração controlada ajudam a reduzir a frequência cardíaca"
                 android:paddingHorizontal="15dp"
                 android:fontFamily="@font/poppins_medium"
                 android:letterSpacing="-0.05"
@@ -159,7 +163,7 @@
                 android:id="@+id/diariotxt"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Aenean nibh massa id orci vulputate viverra interdum. Tellus quam aliquam est mauris molestie consequat nec et."
+                android:text="Escrever sobre o que sentimos é uma forma poderosa de entender melhor nossas emoções."
                 android:paddingHorizontal="15dp"
                 android:fontFamily="@font/poppins_medium"
                 android:letterSpacing="-0.05"

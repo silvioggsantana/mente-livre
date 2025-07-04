@@ -4,45 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Conteúdo rolável -->
-    <ScrollView
+    <!-- Título fixo no topo -->
+    <TextView
+        android:id="@+id/configtitulo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Diário"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/azul_diario_component" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingBottom="16dp">
+    <!-- ListView preenchendo todo espaço menos o título -->
+    <ListView
+        android:id="@+id/listaAnotacoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp" />
 
-            <TextView
-                android:id="@+id/configtitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Diário"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:layout_marginTop="50dp"
-                android:textColor="@color/azul_diario_component" />
-
-            <include
-                layout="@layout/diario_component"
-                android:visibility="visible" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <!-- Botão flutuante com imagem -->
+    <!-- Botão flutuante no canto inferior direito -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/botaoAdicionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="24dp"
+        android:layout_margin="30dp"
         android:backgroundTint="@color/azul_escuro"
         android:clickable="true"
         app:srcCompat="@drawable/plus" />

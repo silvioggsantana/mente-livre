@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,7 +57,7 @@ public class ConfiguracaoActivity extends AppCompatActivity implements View.OnCl
 
             nomeInput.setText(nome);
             senhaInput.setText(senha);
-            confirmarSenhaInput.setText(senha); // opcional
+            confirmarSenhaInput.setText(senha);
         }
         if (c != null) c.close();
     }
@@ -76,6 +77,7 @@ public class ConfiguracaoActivity extends AppCompatActivity implements View.OnCl
             Toast.makeText(this, "As senhas não coincidem", Toast.LENGTH_SHORT).show();
             return;
         }
+
 
         boolean atualizado = dbHelper.atualizarUsuario(idUsuario, novoNome, novaSenha);
 

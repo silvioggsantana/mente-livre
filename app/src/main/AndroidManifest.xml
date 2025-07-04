@@ -36,6 +36,9 @@
             android:name=".MenuActivity"
             android:exported="false"/>
         <activity
+            android:name=".NovaAnotacaoActivity"
+            android:exported="false"/>
+        <activity
             android:name=".RespiracaoActivity"
             android:exported="false"/>
         <activity
